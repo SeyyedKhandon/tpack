@@ -1,0 +1,39 @@
+{
+  "name": "tpack",
+  "version": "0.1.0",
+  "publisher": "SeyyedKhandon",
+  "author": "SeyyedMahdi Hassanpour",
+  "displayName": "One Dark ++ (TPack)",
+  "description": "Theme Essentials Extension Pack(One Dark Pro,Material Icon, FiraCode font) for Visual Studio Code",
+  "license": "MIT",
+  "galleryBanner": {
+    "color": "#47B784",
+    "theme": "dark"
+  },
+  "icon": "tpack.jpg",
+  "repository": {
+    "url": "https://github.com/SeyyedKhandon/tpack.git"
+  },
+  "homepage": "https://github.com/SeyyedKhandon/tpack.git",
+  "bugs": {
+    "url": "https://github.com/SeyyedKhandon/tpack.git/issues"
+  },
+  "keywords": [
+    "web",
+    "developer experience",
+    "Quality/Metric Extension Pack",
+    "One Dark Pro",
+    "Material Icon Pack",
+    "Fira Code font"
+  ],
+  "categories": [
+    "Extension Packs"
+  ],
+  "engines": {
+    "vscode": "^1.54.3"
+  },
+  "extensionPack": [
+    "zhuangtongfa.material-theme",
+    "pkief.material-icon-theme"
+  ]
+}
