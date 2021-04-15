@@ -1,6 +1,7 @@
 # One Dark++ Theme Extension Pack (TPack)
 
-VSCode `Icon`/`Theme`/`Font` pack.
+VSCode `Icon`/`Theme`/`Font` pack. See [Pre-defined Configs](#pre-defined-settings-which-you-maybe-want-to-use)
+<img src="./vscode-example.jpg" width="800">
 
 ### Pre-defined settings which you maybe want to use:
 
