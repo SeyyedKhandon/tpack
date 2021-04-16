@@ -1,14 +1,13 @@
 # One Dark++ Theme Extension Pack (TPack)
 
-VSCode `Icon`/`Theme`/`Font` pack. See [Pre-defined Configs](#pre-defined-settings-which-you-maybe-want-to-use)
+VSCode `Icon`/`Theme`/`Font` pack. See [One-Click Setup](#pre-defined-settings-which-you-maybe-want-to-use)
 <img src="./vscode-example.jpg" width="800">
 
-### Pre-defined settings which you maybe want to use:
+### 1-Click Setup:
 
-1. press `ctrl+shift+p`
-2. type `settings`
-3. click on `Preferences: Open settings (JSON)` to open your settings.json file
-4. add these lines to the end of JSON Settings:
+1. Press `ctrl+shift+p`
+2. Type `tpack` or `update config`
+3. Click on `Update Theme Pack Extension (TPack) Config` to automatically add below configs to your settings.json file
 
 ```json
 {
@@ -19,7 +18,7 @@ VSCode `Icon`/`Theme`/`Font` pack. See [Pre-defined Configs](#pre-defined-settin
 }
 ```
 
-5. `FiraCode Font` <img src="https://raw.githubusercontent.com/SeyyedKhandon/vscode-web-developer-experience/main/firacode.png" width="100"/>
+4. `FiraCode Font` <img src="https://raw.githubusercontent.com/SeyyedKhandon/vscode-web-developer-experience/main/firacode.png" width="100"/>
 
    - Download [FiraCode](https://github.com/tonsky/FiraCode/releases/download/5.2/Fira_Code_v5.2.zip) fonts
    - Install `ttf` fonts in your OS
