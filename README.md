@@ -3,11 +3,11 @@
 VSCode `Icon`/`Theme`/`Font` pack. See [One-Click Setup](#pre-defined-settings-which-you-maybe-want-to-use)
 <img src="./vscode-example.jpg" width="800">
 
-### 1-Click Setup:
+## 1-Click Setup:
 
 1. Press `ctrl+shift+p`
 2. Type `tpack` or `update config`
-3. Click on `Update Theme Pack Extension (TPack) Config` to automatically add below configs to your settings.json file
+3. Click on `Update Theme Pack Extension (TPack) Config` to automatically add below configs to your `settings.json` file
 
 ```json
 {

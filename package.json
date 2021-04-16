@@ -1,10 +1,10 @@
 {
   "name": "tpack",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "SeyyedKhandon",
   "author": "SeyyedMahdi Hassanpour",
-  "displayName": "One Dark ++ (TPack)",
-  "description": "Theme Essentials Extension Pack(One Dark Pro,Material Icon, FiraCode font) for Visual Studio Code",
+  "displayName": "One Dark Pro++ (TPack)",
+  "description": "Theme Essentials Extension Pack(One Dark Pro, Material Icon, FiraCode font) for Visual Studio Code",
   "license": "MIT",
   "galleryBanner": {
     "color": "#47B784",
