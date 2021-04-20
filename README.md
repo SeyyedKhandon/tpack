@@ -18,9 +18,7 @@ VSCode `Icon`/`Theme`/`Font` pack. See [One-Click Setup](#pre-defined-settings-w
 }
 ```
 
-4. It will Automatically download `firaCode.zip` and will show you the path. If it has been failed, you can still download it manually:
-
-   <img src="https://raw.githubusercontent.com/SeyyedKhandon/vscode-web-developer-experience/main/firacode.png" width="100"/>
+4. `FiraCode Font` <img src="https://raw.githubusercontent.com/SeyyedKhandon/vscode-web-developer-experience/main/firacode.png" width="100"/>
 
    - Download [FiraCode](https://github.com/tonsky/FiraCode/releases/download/5.2/Fira_Code_v5.2.zip) fonts
    - Install `ttf` fonts in your OS

@@ -20,15 +20,15 @@ export async function activate(context: vscode.ExtensionContext) {
       console.log(JSON.stringify(defaultSettings, null, 1));
       await updateUserSettings(defaultSettings);
       showDialog("Theme Pack Config has been updated");
-      download(
-        context.extensionPath,
-        () => showDialog("Downloading firaCode.zip"),
-        (addr: string) => showDialog(`${addr} has been Downloaded.`)
-      ).catch(() => {
-        showDialog(
-          "Please Try download FiraCode Manually from extension page."
-        );
-      });
+      // download(
+      //   context.extensionPath,
+      //   () => showDialog("Downloading firaCode.zip"),
+      //   (addr: string) => showDialog(`${addr} has been Downloaded.`)
+      // ).catch(() => {
+      //   showDialog(
+      //     "Please Try download FiraCode Manually from extension page."
+      //   );
+      // });
     }
   );
   context.subscriptions.push(disposable);
