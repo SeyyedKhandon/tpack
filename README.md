@@ -1,6 +1,7 @@
 # One Dark++ Theme Extension Pack (TPack)
 
 #### VSCode `Icon`/`Theme`/`Font` pack. See [One-Click Setup](#pre-defined-settings-which-you-maybe-want-to-use)
+
 <img src="./vscode-example.jpg" width="800">
 
 ## 1-Click Setup:
@@ -39,10 +40,10 @@
 
 ## Recommended Extension pack
 
-<a href="https://marketplace.visualstudio.com/items?itemName=SeyyedKhandon.xpack">
-<img src="https://seyyedkhandon.gallerycdn.vsassets.io/extensions/seyyedkhandon/xpack/0.1.0/1617940435190/Microsoft.VisualStudio.Services.Icons.Default" width="300"/></a>
+<a href="https://marketplace.visualstudio.com/items?itemName=SeyyedKhandon.zpack">
+<img src="https://seyyedkhandon.gallerycdn.vsassets.io/extensions/seyyedkhandon/zpack/1.0.6/1620297423398/Microsoft.VisualStudio.Services.Icons.Default" width="300"/></a>
 
-[XPack](https://marketplace.visualstudio.com/items?itemName=SeyyedKhandon.xpack) is An Opinionated collection of the `best` and `most` used extensions for Web Developers in VSCode which has Better `Developer Experience(DX)` and `load time` in Mind.
+[ZPack](https://marketplace.visualstudio.com/items?itemName=SeyyedKhandon.zpack) is An Opinionated collection of the `best` and `most` used extensions for Web Developers in VSCode which has Better `Developer Experience(DX)` and `load time` in Mind.
 
 ## Relevant Links
 
