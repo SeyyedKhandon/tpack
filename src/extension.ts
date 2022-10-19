@@ -1,7 +1,8 @@
 import * as vscode from "vscode";
 import { extractAsKeyValue, GeneralObject } from "./util";
 import { defaultSettings } from "./defaultSettings";
-import { download } from "./download";
+const installfont = require("installfont");
+const showDialog = vscode.window.showInformationMessage;
 
 const updateUserSettings = async (settings: GeneralObject[]) => {
   settings.forEach(async (setting) => {
@@ -11,24 +12,24 @@ const updateUserSettings = async (settings: GeneralObject[]) => {
       .update(key, value, vscode.ConfigurationTarget.Global);
   });
 };
+const installFiraCodeFont = async (address: string) => {
+  installfont(address, function (err: any) {
+    if (err) {
+      showDialog(err.toString());
+      showDialog("Reload VSCODE after manually installing fonts!");
+      require("child_process").exec(`start "" ${address}`);
+    }
+    showDialog("The FiraFont has been successfully installed");
+  });
+};
 export async function activate(context: vscode.ExtensionContext) {
   console.log('Congratulations, your extension "Theme Pack" is now active!');
-  const showDialog = vscode.window.showInformationMessage;
   let disposable = vscode.commands.registerCommand(
     "tpack.updateConfig",
     async () => {
-      console.log(JSON.stringify(defaultSettings, null, 1));
       await updateUserSettings(defaultSettings);
-      showDialog("Theme Pack Config has been updated");
-      // download(
-      //   context.extensionPath,
-      //   () => showDialog("Downloading firaCode.zip"),
-      //   (addr: string) => showDialog(`${addr} has been Downloaded.`)
-      // ).catch(() => {
-      //   showDialog(
-      //     "Please Try download FiraCode Manually from extension page."
-      //   );
-      // });
+      showDialog("Theme Pack Config has been updated.");
+      installFiraCodeFont(context.extensionPath + "/firaCodeFont");
     }
   );
   context.subscriptions.push(disposable);
