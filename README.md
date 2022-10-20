@@ -36,7 +36,7 @@
 
 - 2- [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme) - Material Design Icons for Visual Studio Code
 
-- 3- [FiraCode](https://github.com/tonsky/FiraCode) Font
+- 3- [FiraCode](https://github.com/tonsky/FiraCode) - Professional Font for Developers
 
 ## Recommended Extension pack
 

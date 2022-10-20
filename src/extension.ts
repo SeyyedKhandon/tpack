@@ -1,12 +1,10 @@
 import * as vscode from "vscode";
-import { extractAsKeyValue, GeneralObject } from "./util";
-import { defaultSettings } from "./defaultSettings";
+import { defaultSettings, GeneralObject } from "./defaultSettings";
 const installfont = require("installfont");
 const showDialog = vscode.window.showInformationMessage;
 
-const updateUserSettings = async (settings: GeneralObject[]) => {
-  settings.forEach(async (setting) => {
-    const { key, value } = extractAsKeyValue(setting);
+const updateUserSettings = async (settings: GeneralObject) => {
+  Object.entries(settings).forEach(async ([key,value]) => {
     await vscode.workspace
       .getConfiguration()
       .update(key, value, vscode.ConfigurationTarget.Global);
