@@ -13,6 +13,8 @@
 1. Press `ctrl+shift+p`
 2. Type `tpack` or `update config`
 3. Click on `Update Theme Pack Extension (TPack) Config` to automatically add configs to your `VSCode`
+4. Install the official `FiraCode` fonts that the extension displays. 
+
 
 <details>
 <summary>

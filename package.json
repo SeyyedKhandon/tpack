@@ -1,6 +1,6 @@
 {
   "name": "tpack",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "publisher": "SeyyedKhandon",
   "author": "SeyyedMahdi Hassanpour",
   "displayName": "One Dark Pro++ (TPack)",
@@ -33,7 +33,8 @@
   },
   "extensionPack": [
     "zhuangtongfa.material-theme",
-    "pkief.material-icon-theme"
+    "pkief.material-icon-theme",
+    "SeyyedKhandon.firacode"
   ],
   "repository": {
     "url": "https://github.com/SeyyedKhandon/tpack.git"
@@ -47,6 +48,7 @@
     "One Dark Pro",
     "Material Icon Pack",
     "Fira Code font",
+    "Professional font",
     "web",
     "developer experience"
   ],

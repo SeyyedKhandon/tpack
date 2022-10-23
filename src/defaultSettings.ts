@@ -3,7 +3,5 @@ export interface GeneralObject {
 }
 export const defaultSettings = {
   "workbench.colorTheme": "One Dark Pro",
-  "workbench.iconTheme": "material-icon-theme",
-  "editor.fontFamily": "Fira Code",
-  "editor.fontLigatures": true,
+  "workbench.iconTheme": "material-icon-theme"
 };
