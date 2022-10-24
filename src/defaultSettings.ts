@@ -3,5 +3,5 @@ export interface GeneralObject {
 }
 export const defaultSettings = {
   "workbench.colorTheme": "One Dark Pro",
-  "workbench.iconTheme": "material-icon-theme"
+  "workbench.iconTheme": "material-icon-theme",
 };

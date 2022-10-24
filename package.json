@@ -1,6 +1,6 @@
 {
   "name": "tpack",
-  "version": "1.5.0",
+  "version": "2.0.0",
   "publisher": "SeyyedKhandon",
   "author": "SeyyedMahdi Hassanpour",
   "displayName": "One Dark Pro++ (TPack)",
@@ -12,14 +12,19 @@
   },
   "icon": "assets/tpack.jpg",
   "activationEvents": [
-    "onCommand:tpack.updateConfig"
+    "onStartupFinished",
+    "onCommand:tpack.activate"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "tpack.updateConfig",
-        "title": "Update Theme Pack Extension (TPack) Config"
+        "command": "tpack.activate",
+        "title": "Activate Theme Pack Extension (TPack) Config"
+      },
+      {
+        "command": "tpack.deactivate",
+        "title": "Deactivate Theme Pack Extension (TPack) Config"
       }
     ]
   },
@@ -76,7 +81,5 @@
     "typescript": "^4.1.3",
     "vscode-test": "^1.5.0"
   },
-  "dependencies": {
-    "installfont": "^0.0.12"
-  }
+  "dependencies": {}
 }

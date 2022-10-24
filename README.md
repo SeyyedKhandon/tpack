@@ -10,23 +10,32 @@
 
 ## 1-Click Setup:
 
-1. Press `ctrl+shift+p`
-2. Type `tpack` or `update config`
-3. Click on `Update Theme Pack Extension (TPack) Config` to automatically add configs to your `VSCode`
-4. Install the official `FiraCode` fonts that the extension displays. 
+<img src="./assets/firacode-prompt.jpg" width="400" />
 
+It will set the best configuration automatically, please make sure you click `Yes` on the prompt to enable the **FiraCode font**.
+
+<img src="./assets/firacode-font-directory.jpg" width="400" />
+
+- **Font Directory will open**, and once you have manually installed fonts, **restart VSCODE**.
+
+**Note:** part 2 is because of `OS` limitations, so the fonts must be installed manually.
+
+### Available Commands
+
+- `Activate Theme Pack Extension (TPack) Config`
+- `Deactivate Theme Pack Extension (TPack) Config`
+
+**Note:** to run commands, press `ctrl+shift+p` to open the command palette, and then type each one and click on it.
 
 <details>
 <summary>
-<i>Click to see what configs this plugin will use</i>
+<i>Here are the configurations this plugin will use</i>
 </summary>
 
 ```json
 {
   "workbench.colorTheme": "One Dark Pro",
-  "workbench.iconTheme": "material-icon-theme",
-  "editor.fontFamily": "Fira Code",
-  "editor.fontLigatures": true
+  "workbench.iconTheme": "material-icon-theme"
 }
 ```
 
@@ -38,7 +47,7 @@
 
 - 2- [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme) - Material Design Icons for Visual Studio Code
 
-- 3- [FiraCode](https://github.com/tonsky/FiraCode) - Professional Font for Developers
+- 3- [FiraCode Font](https://marketplace.visualstudio.com/items?itemName=SeyyedKhandon.firacode) - Professional Font for Developers
 
 ## Recommended Extension pack
 

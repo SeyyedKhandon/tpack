@@ -1035,13 +1035,6 @@ inly@^4.0.8:
     unbzip2-stream "^1.0.11"
     yargs-parser "^20.0.0"
 
-installfont@^0.0.12:
-  version "0.0.12"
-  resolved "https://registry.yarnpkg.com/installfont/-/installfont-0.0.12.tgz#bc84b6b2b66095a418d6540e5e0029f0597252de"
-  integrity sha512-ytHF8fizCeAHzqDb10m5MYqzlr9oHnshLdphgcLmpTjbNZZB1kyU27If429726K4ClR/g8v6452e1UpmLj3vbg==
-  dependencies:
-    mkpath "^1.0.0"
-
 is-binary-path@~2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/is-binary-path/-/is-binary-path-2.1.0.tgz#ea1f7f3b80f064236e83470f86c09c254fb45b09"
@@ -1267,11 +1260,6 @@ mkdirp@^1.0.3:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-1.0.4.tgz#3eb5ed62622756d79a5f0e2a221dfebad75c2f7e"
   integrity sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
-
-mkpath@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/mkpath/-/mkpath-1.0.0.tgz#ebb3a977e7af1c683ae6fda12b545a6ba6c5853d"
-  integrity sha512-PbNHr7Y/9Y/2P5pKFv5XOGBfNQqZ+fdiHWcuf7swLACN5ZW5LU7J5tMU8LSBjpluAxAxKYGD9nnaIbdRy9+m1w==
 
 mocha@^8.2.1:
   version "8.3.2"
