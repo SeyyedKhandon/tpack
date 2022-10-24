@@ -1,5 +1,6 @@
 import * as vscode from "vscode";
 import {
+  firacodeActivation,
   extensionActivation,
   extensionDeactivation,
   firstTimeActivation,
@@ -11,12 +12,19 @@ export async function activate(context: vscode.ExtensionContext) {
   );
   firstTimeActivation(context);
 
-  let activateCommand = vscode.commands.registerCommand("tpack.activate", () =>
-    extensionActivation(context)
+  let activateCommand = vscode.commands.registerCommand(
+    "tpack.activate",
+    () => {
+      extensionActivation(context);
+      firacodeActivation("activate");
+    }
   );
   let deactivateCommand = vscode.commands.registerCommand(
     "tpack.deactivate",
-    () => extensionDeactivation(context)
+    () => {
+      extensionDeactivation(context);
+      firacodeActivation("deactivate");
+    }
   );
   context.subscriptions.push(activateCommand, deactivateCommand);
 }

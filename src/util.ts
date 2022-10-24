@@ -12,6 +12,15 @@ const updateUserSettings = (settings: GeneralObject, remove = false) =>
         vscode.ConfigurationTarget.Global
       )
   );
+export function firacodeActivation(
+  state: "activate" | "deactivate" = "activate"
+) {
+  const firaCode = vscode.extensions.getExtension("SeyyedKhandon.firacode");
+  if (!firaCode) return showDialog('Please install "FiraCode font" extension.');
+  firaCode.activate().then(() => {
+    vscode.commands.executeCommand(`firacode.${state}`);
+  });
+}
 
 export function extensionActivation(context: vscode.ExtensionContext) {
   updateUserSettings(defaultSettings);
@@ -31,5 +40,6 @@ export function firstTimeActivation(context: vscode.ExtensionContext) {
 export function extensionDeactivation(context: vscode.ExtensionContext) {
   context.globalState.update(context.extension.id, undefined);
   updateUserSettings(defaultSettings, true);
+  firacodeActivation("deactivate");
   showDialog(`${context.extension.id} is deactivated!`);
 }
