@@ -38,7 +38,7 @@ export function firstTimeActivation(context: vscode.ExtensionContext) {
 }
 
 export function extensionDeactivation(context: vscode.ExtensionContext) {
-  context.globalState.update(context.extension.id, undefined);
+  // context.globalState.update(context.extension.id, undefined);
   updateUserSettings(defaultSettings, true);
   firacodeActivation("deactivate");
   showDialog(`${context.extension.id} is deactivated!`);
