@@ -8,17 +8,13 @@
 
 <img src="./assets/vscode-example.jpg" width="800">
 
-## 1-Click Setup:
-
-<img src="./assets/firacode-prompt.jpg" width="400" />
-
-It will set the best configuration automatically, please make sure you click `Yes` on the prompt to enable the **FiraCode font**.
+#### Final Step
 
 <img src="./assets/firacode-font-directory.jpg" width="400" />
 
-- **Font Directory will open**, and once you have manually installed fonts, **restart VSCODE**.
+When the **Font Directory** appears, install fonts if you haven't already, and restart VSCODE once you have.
 
-**Note:** part 2 is because of `OS` limitations, so the fonts must be installed manually.
+**Note:** this is because of `OS` limitations, the fonts must be installed manually.
 
 ### Available Commands
 

@@ -28,18 +28,17 @@ export function extensionActivation(context: vscode.ExtensionContext) {
 }
 
 export function firstTimeActivation(context: vscode.ExtensionContext) {
-  const id = context.extension.id;
   const version = context.extension.packageJSON.version ?? "1.0.0";
-  const previousVersion = context.globalState.get(id);
+  const previousVersion = context.globalState.get(context.extension.id);
   if (previousVersion === version) return;
 
   extensionActivation(context);
-  context.globalState.update(id, version);
+  context.globalState.update(context.extension.id, version);
 }
 
 export function extensionDeactivation(context: vscode.ExtensionContext) {
   // context.globalState.update(context.extension.id, undefined);
   updateUserSettings(defaultSettings, true);
   firacodeActivation("deactivate");
-  showDialog(`${context.extension.id} is deactivated!`);
+  showDialog(`${context.extension.packageJSON.displayName} is deactivated!`);
 }
