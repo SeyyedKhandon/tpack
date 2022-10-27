@@ -1,6 +1,6 @@
 {
   "name": "tpack",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "publisher": "SeyyedKhandon",
   "author": "SeyyedMahdi Hassanpour",
   "displayName": "One Dark Pro++ (TPack)",
@@ -12,19 +12,22 @@
   },
   "icon": "assets/tpack.jpg",
   "activationEvents": [
-    "onStartupFinished",
-    "onCommand:tpack.activate"
+    "onStartupFinished"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
         "command": "tpack.activate",
-        "title": "Activate Theme Pack Extension (TPack) Config"
+        "title": "Activate One Dark Pro++ (TPack) Config"
       },
       {
         "command": "tpack.deactivate",
-        "title": "Deactivate Theme Pack Extension (TPack) Config"
+        "title": "Deactivate One Dark Pro++ (TPack) Config"
+      },
+      {
+        "command": "tpack.reset",
+        "title": "Reset One Dark Pro++ (TPack) Config"
       }
     ]
   },

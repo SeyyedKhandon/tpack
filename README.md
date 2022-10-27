@@ -2,7 +2,7 @@
   <img style="margin:auto;" src="./assets/tpack.jpg" width="200px" />
 </a>
 
-# One Dark++ Theme Extension Pack (TPack)
+# One Dark Pro++ - Theme Extension Pack (TPack)
 
 #### VSCode `Icon`/`Theme`/`Font` pack. See [One-Click Setup](#pre-defined-settings-which-you-maybe-want-to-use)
 
@@ -18,8 +18,9 @@ When the **Font Directory** appears, install fonts if you haven't already, and r
 
 ### Available Commands
 
-- `Activate Theme Pack Extension (TPack) Config`
-- `Deactivate Theme Pack Extension (TPack) Config`
+- `Activate One Dark Pro++ (TPack) Config`
+- `Deactivate One Dark Pro++ (TPack) Config`
+- `Reset One Dark Pro++ (TPack) Config`
 
 **Note:** to run commands, press `ctrl+shift+p` to open the command palette, and then type each one and click on it.
 
@@ -31,7 +32,9 @@ When the **Font Directory** appears, install fonts if you haven't already, and r
 ```json
 {
   "workbench.colorTheme": "One Dark Pro",
-  "workbench.iconTheme": "material-icon-theme"
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true
 }
 ```
 

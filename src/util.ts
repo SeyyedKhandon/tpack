@@ -16,7 +16,7 @@ export function firacodeActivation(
   state: "activate" | "deactivate" = "activate"
 ) {
   const firaCode = vscode.extensions.getExtension("SeyyedKhandon.firacode");
-  if (!firaCode) return showDialog('Please install "FiraCode font" extension.');
+  if (!firaCode) return showDialog('"FiraCode font" extension is missing.');
   firaCode.activate().then(() => {
     vscode.commands.executeCommand(`firacode.${state}`);
   });
@@ -37,8 +37,11 @@ export function firstTimeActivation(context: vscode.ExtensionContext) {
 }
 
 export function extensionDeactivation(context: vscode.ExtensionContext) {
-  // context.globalState.update(context.extension.id, undefined);
   updateUserSettings(defaultSettings, true);
   firacodeActivation("deactivate");
   showDialog(`${context.extension.packageJSON.displayName} is deactivated!`);
+}
+export function extensionReset(context: vscode.ExtensionContext) {
+  context.globalState.update(context.extension.id, undefined);
+  extensionDeactivation(context);
 }

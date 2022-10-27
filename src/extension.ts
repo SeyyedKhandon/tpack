@@ -4,6 +4,7 @@ import {
   extensionActivation,
   extensionDeactivation,
   firstTimeActivation,
+  extensionReset,
 } from "./util";
 
 export async function activate(context: vscode.ExtensionContext) {
@@ -12,21 +13,24 @@ export async function activate(context: vscode.ExtensionContext) {
   );
   firstTimeActivation(context);
 
-  let activateCommand = vscode.commands.registerCommand(
+  const activateCommand = vscode.commands.registerCommand(
     "tpack.activate",
     () => {
       extensionActivation(context);
       firacodeActivation("activate");
     }
   );
-  let deactivateCommand = vscode.commands.registerCommand(
+  const deactivateCommand = vscode.commands.registerCommand(
     "tpack.deactivate",
     () => {
       extensionDeactivation(context);
       firacodeActivation("deactivate");
     }
   );
-  context.subscriptions.push(activateCommand, deactivateCommand);
+  const resetCommand = vscode.commands.registerCommand("tpack.reset", () =>
+    extensionReset(context)
+  );
+  context.subscriptions.push(activateCommand, deactivateCommand, resetCommand);
 }
 
 export function deactivate(context: vscode.ExtensionContext) {
